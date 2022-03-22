@@ -8,9 +8,9 @@
 <!-- SCHEMA.ORG METADATA -->
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://vocab.linkeddata.es/def/conceptual-mapping-csv","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://vocab.linkeddata.es/def/conceptual-mapping-csv","name":"Conceptual Mapping - CSV description", "headline":"This ontology extends the Conceptual Mapping to describe CSV with properties imported from CSVW.", "datePublished":"2022-03-22T00:00:00", "version":"v0.0.1", "license":"http://purl.org/NET/rdflicense/cc-by-nc-sa4.0", "author":[{"@type":"Person","name":"Ana Iglesias Molina (Ontology Engineering Group)"}]}</script>
 
-<script src="resources/jquery.js"></script> 
+<script src="resources/jquery.js"></script>
 <script src="resources/marked.min.js"></script> 
-    <script> 
+    <script>
 function loadHash() {
   jQuery(".markdown").each(function(el){jQuery(this).after(marked(jQuery(this).text())).remove()});
 	var hash = location.hash;
@@ -40,20 +40,20 @@ function loadTOC(){
 		}
 	  });
 	  t+='</ul>';
-	  $("#toc").html(t); 
+	  $("#toc").html(t);
 }
  $.fn.ignore = function(sel){
         return this.clone().find(sel||">*").remove().end();
  };    $(function(){
-      $("#abstract").load("sections/abstract-en.html"); 
-      $("#introduction").load("sections/introduction-en.html"); 
-      $("#overview").load("sections/overview-en.html"); 
-      $("#description").load("sections/description-en.html"); 
-      $("#references").load("sections/references-en.html"); 
-      $("#crossref").load("sections/crossref-en.html", null, loadHash); 
+      $("#abstract").load("sections/abstract-en.html");
+      $("#introduction").load("sections/introduction-en.html");
+      $("#overview").load("sections/overview-en.html");
+      $("#description").load("sections/description-en.html");
+      $("#references").load("sections/references-en.html");
+      $("#crossref").load("sections/crossref-en.html", null, loadHash);
     });
-    </script> 
-  </head> 
+    </script>
+  </head>
 
 <body>
 <div class="container">
