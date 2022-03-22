@@ -1,0 +1,120 @@
+{
+  "@context" : {
+    "versionIRI" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionIRI"
+    },
+    "doubleQuote" : {
+      "@id" : "http://www.w3.org/ns/csvw#doubleQuote",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "scopeNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#scopeNote"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "trim" : {
+      "@id" : "http://www.w3.org/ns/csvw#trim",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "string" : {
+      "@id" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "quoteChar" : {
+      "@id" : "http://www.w3.org/ns/csvw#quoteChar",
+      "@type" : "@id"
+    },
+    "altLabel" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#altLabel"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "lineTerminators" : {
+      "@id" : "http://www.w3.org/ns/csvw#lineTerminators",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "Dialect" : {
+      "@id" : "http://www.w3.org/ns/csvw#Dialect"
+    },
+    "delimiter" : {
+      "@id" : "http://www.w3.org/ns/csvw#delimiter",
+      "@type" : "@id"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "definition" : {
+      "@id" : "http://www.w3.org/2008/05/skos#definition"
+    },
+    "editorialNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#editorialNote"
+    },
+    "skipBlankRows" : {
+      "@id" : "http://www.w3.org/ns/csvw#skipBlankRows",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "changeNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#changeNote"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/elements/1.1/publisher"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "SourceFrame" : {
+      "@id" : "http://http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame"
+    },
+    "skipInitialSpace" : {
+      "@id" : "http://www.w3.org/ns/csvw#skipInitialSpace",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "headerRowCount" : {
+      "@id" : "http://www.w3.org/ns/csvw#headerRowCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "skipRows" : {
+      "@id" : "http://www.w3.org/ns/csvw#skipRows",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "header" : {
+      "@id" : "http://www.w3.org/ns/csvw#header",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "skipColumns" : {
+      "@id" : "http://www.w3.org/ns/csvw#skipColumns",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    }
+  }
+}

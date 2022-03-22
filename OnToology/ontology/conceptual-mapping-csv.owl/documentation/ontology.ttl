@@ -1,0 +1,227 @@
+@prefix : <http://vocab.linkeddata.es/def/conceptual-mapping-csv#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://vocab.linkeddata.es/def/conceptual-mapping-csv#> .
+
+<http://vocab.linkeddata.es/def/conceptual-mapping-csv#> rdf:type owl:Ontology ;
+                                                          owl:versionIRI <http://vocab.linkeddata.es/def/conceptual-mapping-csv> ;
+                                                          <http://purl.org/dc/elements/1.1/publisher> <http://www.oeg-upm.net/> ;
+                                                          <http://purl.org/dc/elements/1.1/title> "Conceptual Mapping - CSV description"@en ;
+                                                          <http://purl.org/dc/terms/created> "2020-10-14T00:00:00"@en ;
+                                                          <http://purl.org/dc/terms/creator> "Ana Iglesias Molina (Ontology Engineering Group)"@es ;
+                                                          <http://purl.org/dc/terms/description> "This ontology extends the Conceptual Mapping to describe CSV with properties imported from CSVW."@en ;
+                                                          <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by-nc-sa4.0> ;
+                                                          <http://purl.org/dc/terms/modified> "2022-03-22T00:00:00"^^xsd:dateTime ;
+                                                          <http://purl.org/vocab/vann/preferredNamespacePrefix> "cm-csv"@en ;
+                                                          <http://purl.org/vocab/vann/preferredNamespaceUri> <http://vocab.linkeddata.es/def/conceptual-mapping-csv> ;
+                                                          owl:versionInfo "v0.0.1"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionIRI
+owl:versionIRI rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+<http://www.w3.org/2004/02/skos/core#altLabel> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#changeNote
+<http://www.w3.org/2004/02/skos/core#changeNote> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#editorialNote
+<http://www.w3.org/2004/02/skos/core#editorialNote> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#scopeNote
+<http://www.w3.org/2004/02/skos/core#scopeNote> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2008/05/skos#definition
+<http://www.w3.org/2008/05/skos#definition> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.w3.org/ns/csvw#delimiter
+<http://www.w3.org/ns/csvw#delimiter> rdf:type owl:ObjectProperty ;
+                                      rdfs:domain <http://www.w3.org/ns/csvw#Dialect> ;
+                                      rdfs:range xsd:string ;
+                                      rdfs:comment "An atomic property that sets the delimiter flag to the single provided value, which MUST be a string."@en ;
+                                      rdfs:isDefinedBy <http://www.w3.org/ns/csvw#> ;
+                                      rdfs:label "delimiter"@en .
+
+
+###  http://www.w3.org/ns/csvw#lineTerminators
+<http://www.w3.org/ns/csvw#lineTerminators> rdf:type owl:ObjectProperty ;
+                                            rdfs:domain <http://www.w3.org/ns/csvw#Dialect> ;
+                                            rdfs:range xsd:string ;
+                                            rdfs:comment "An atomic property that sets the line terminators flag to either an array containing the single provided string value, or the provided array."@en ;
+                                            rdfs:isDefinedBy <http://www.w3.org/ns/csvw#> ;
+                                            rdfs:label "line terminators"@en .
+
+
+###  http://www.w3.org/ns/csvw#quoteChar
+<http://www.w3.org/ns/csvw#quoteChar> rdf:type owl:ObjectProperty ;
+                                      rdfs:domain <http://www.w3.org/ns/csvw#Dialect> ;
+                                      rdfs:range xsd:string ;
+                                      rdfs:comment "An atomic property that sets the quote character flag to the single provided value, which must be a string or `null`."@en ;
+                                      rdfs:isDefinedBy <http://www.w3.org/ns/csvw#> ;
+                                      rdfs:label "quote char"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.w3.org/ns/csvw#doubleQuote
+<http://www.w3.org/ns/csvw#doubleQuote> rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain <http://www.w3.org/ns/csvw#Dialect> ;
+                                        rdfs:range xsd:boolean ;
+                                        rdfs:comment "A boolean atomic property that, if `true`, sets the escape character flag to `\"`."@en ;
+                                        rdfs:isDefinedBy <http://www.w3.org/ns/csvw#> ;
+                                        rdfs:label "double quote"@en .
+
+
+###  http://www.w3.org/ns/csvw#header
+<http://www.w3.org/ns/csvw#header> rdf:type owl:DatatypeProperty ;
+                                   rdfs:domain <http://www.w3.org/ns/csvw#Dialect> ;
+                                   rdfs:range xsd:boolean ;
+                                   rdfs:comment "A boolean atomic property that, if `true`, sets the header row count flag to `1`, and if `false` to `0`, unless headerRowCount is provided, in which case the value provided for the header property is ignored."@en ;
+                                   rdfs:isDefinedBy <http://www.w3.org/ns/csvw#> ;
+                                   rdfs:label "header"@en .
+
+
+###  http://www.w3.org/ns/csvw#headerRowCount
+<http://www.w3.org/ns/csvw#headerRowCount> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain <http://www.w3.org/ns/csvw#Dialect> ;
+                                           rdfs:range xsd:nonNegativeInteger ;
+                                           rdfs:comment "An numeric atomic property that sets the header row count flag to the single provided value, which must be a non-negative integer."@en ;
+                                           rdfs:isDefinedBy <http://www.w3.org/ns/csvw#> ;
+                                           rdfs:label "header row count"@en .
+
+
+###  http://www.w3.org/ns/csvw#skipBlankRows
+<http://www.w3.org/ns/csvw#skipBlankRows> rdf:type owl:DatatypeProperty ;
+                                          rdfs:domain <http://www.w3.org/ns/csvw#Dialect> ;
+                                          rdfs:range xsd:boolean ;
+                                          rdfs:comment "An boolean atomic property that sets the `skip blank rows` flag to the single provided boolean value."@en ;
+                                          rdfs:isDefinedBy <http://www.w3.org/ns/csvw#> ;
+                                          rdfs:label "skip blank rows"@en .
+
+
+###  http://www.w3.org/ns/csvw#skipColumns
+<http://www.w3.org/ns/csvw#skipColumns> rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain <http://www.w3.org/ns/csvw#Dialect> ;
+                                        rdfs:range xsd:nonNegativeInteger ;
+                                        rdfs:comment "An numeric atomic property that sets the `skip columns` flag to the single provided numeric value, which MUST be a non-negative integer."@en ;
+                                        rdfs:isDefinedBy <http://www.w3.org/ns/csvw#> ;
+                                        rdfs:label "skip columns"@en .
+
+
+###  http://www.w3.org/ns/csvw#skipInitialSpace
+<http://www.w3.org/ns/csvw#skipInitialSpace> rdf:type owl:DatatypeProperty ;
+                                             rdfs:domain <http://www.w3.org/ns/csvw#Dialect> ;
+                                             rdfs:range xsd:boolean ;
+                                             rdfs:comment "A boolean atomic property that, if `true`, sets the trim flag to \"start\". If `false`, to `false`."@en ;
+                                             rdfs:isDefinedBy <http://www.w3.org/ns/csvw#> ;
+                                             rdfs:label "skip initial space"@en .
+
+
+###  http://www.w3.org/ns/csvw#skipRows
+<http://www.w3.org/ns/csvw#skipRows> rdf:type owl:DatatypeProperty ;
+                                     rdfs:domain <http://www.w3.org/ns/csvw#Dialect> ;
+                                     rdfs:range xsd:nonNegativeInteger ;
+                                     rdfs:comment "An numeric atomic property that sets the `skip rows` flag to the single provided numeric value, which MUST be a non-negative integer."@en ;
+                                     rdfs:isDefinedBy <http://www.w3.org/ns/csvw#> ;
+                                     rdfs:label "skip rows"@en .
+
+
+###  http://www.w3.org/ns/csvw#trim
+<http://www.w3.org/ns/csvw#trim> rdf:type owl:DatatypeProperty ;
+                                 rdfs:domain <http://www.w3.org/ns/csvw#Dialect> ;
+                                 rdfs:range xsd:boolean ;
+                                 rdfs:comment "An atomic property that, if the boolean `true`, sets the trim flag to `true` and if the boolean `false` to `false`. If the value provided is a string, sets the trim flag to the provided value, which must be one of \"true\", \"false\", \"start\" or \"end\"."@en ;
+                                 rdfs:isDefinedBy <http://www.w3.org/ns/csvw#> ;
+                                 rdfs:label "trim"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame
+<http://http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame> rdf:type owl:Class ;
+                                                                       rdfs:label "Source Frame" ;
+                                                                       <http://www.w3.org/2004/02/skos/core#definition> "Frame that is related to the data source" .
+
+
+###  http://www.w3.org/2001/XMLSchema#string
+xsd:string rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/csvw#Dialect
+<http://www.w3.org/ns/csvw#Dialect> rdf:type owl:Class ;
+                                    rdfs:subClassOf <http://http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame> ;
+                                    rdfs:comment "A Dialect Description provides hints to parsers about how to parse a linked file."@en ;
+                                    rdfs:isDefinedBy <http://www.w3.org/ns/csvw#> ;
+                                    rdfs:label "Dialect Description"@en .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
