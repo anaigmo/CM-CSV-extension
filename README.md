@@ -13,7 +13,7 @@ The requirements of this vocabulary are specified [here](tbd).
 The following diagram shows a general overview of the classes and properties of the Conceptual Mapping - CSV description vocabulary. This diagram follows the [Chowlk notation](https://chowlk.linkeddata.es/notation.html).
 
 <p align="center"> 
- <img src="https://github.com/anaigmo/Conceptual-Mapping-Ontology/blob/main/OnToology/ontology/conceptual-mapping-ontology.owl/documentation/resources/images/cm_diagram.png?raw=true" alt="schema" width="950"/> 
+ <img src="https://github.com/anaigmo/CM-CSV-extension/blob/main/diagram/CM-CSV-extension.png?raw=true" alt="schema" width="500"/> 
 </p>
 
 ### Ontology (OWL)
