@@ -336,29 +336,6 @@
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/csvw#"/>
         <rdfs:label xml:lang="en">Dialect Description</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping/functions-list.ttl -->
-
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping/functions-list.ttl"/>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping/protocols_list.ttl -->
-
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping/protocols_list.ttl"/>
 </rdf:RDF>
 
 
