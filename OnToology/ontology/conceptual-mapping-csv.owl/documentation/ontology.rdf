@@ -13,7 +13,7 @@
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping-csv#">
         <owl:versionIRI rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping-csv"/>
-        <dc:publisher rdf:resource="http://www.oeg-upm.net/"/>
+        <dc:publisher rdf:resource="https://oeg.fi.upm.es/"/>
         <dc:title xml:lang="en">Conceptual Mapping - CSV description</dc:title>
         <terms:created xml:lang="en">2022-03-22T00:00:00</terms:created>
         <terms:creator xml:lang="es">Ana Iglesias Molina (Ontology Engineering Group)</terms:creator>

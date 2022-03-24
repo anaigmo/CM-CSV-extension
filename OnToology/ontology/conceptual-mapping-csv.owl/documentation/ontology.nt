@@ -1,6 +1,6 @@
 <http://vocab.linkeddata.es/def/conceptual-mapping-csv#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://vocab.linkeddata.es/def/conceptual-mapping-csv#> <http://www.w3.org/2002/07/owl#versionIRI> <http://vocab.linkeddata.es/def/conceptual-mapping-csv> .
-<http://vocab.linkeddata.es/def/conceptual-mapping-csv#> <http://purl.org/dc/elements/1.1/publisher> <http://www.oeg-upm.net/> .
+<http://vocab.linkeddata.es/def/conceptual-mapping-csv#> <http://purl.org/dc/elements/1.1/publisher> <https://oeg.fi.upm.es/> .
 <http://vocab.linkeddata.es/def/conceptual-mapping-csv#> <http://purl.org/dc/elements/1.1/title> "Conceptual Mapping - CSV description"@en .
 <http://vocab.linkeddata.es/def/conceptual-mapping-csv#> <http://purl.org/dc/terms/created> "2022-03-22T00:00:00"@en .
 <http://vocab.linkeddata.es/def/conceptual-mapping-csv#> <http://purl.org/dc/terms/creator> "Ana Iglesias Molina (Ontology Engineering Group)"@es .
