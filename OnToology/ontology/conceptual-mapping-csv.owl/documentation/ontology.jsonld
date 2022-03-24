@@ -44,7 +44,7 @@
   "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping-csv#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/publisher" : [ {
-    "@id" : "http://www.oeg-upm.net/"
+    "@id" : "https://oeg.fi.upm.es/"
   } ],
   "http://purl.org/dc/elements/1.1/title" : [ {
     "@language" : "en",
