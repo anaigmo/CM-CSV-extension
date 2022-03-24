@@ -370,14 +370,10 @@
 
 
     <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping-csv#CSVSourceFrame">
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame"/>
-                    <rdf:Description rdf:about="http://www.w3.org/ns/csvw#Dialect"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="http://http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/csvw#Dialect"/>
+        <rdfs:label>CSV Source Frame</rdfs:label>
+        <skos:definition>Frame that is related to a CSV data source</skos:definition>
     </owl:Class>
     
 
