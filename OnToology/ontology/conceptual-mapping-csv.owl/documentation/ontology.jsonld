@@ -1,4 +1,14 @@
 [ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame"
+    }, {
+      "@id" : "http://www.w3.org/ns/csvw#Dialect"
+    } ]
+  } ]
+}, {
   "@id" : "http://http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -52,7 +62,7 @@
   } ],
   "http://purl.org/dc/terms/created" : [ {
     "@language" : "en",
-    "@value" : "2020-10-14T00:00:00"
+    "@value" : "2022-03-22T00:00:00"
   } ],
   "http://purl.org/dc/terms/creator" : [ {
     "@language" : "es",
@@ -66,8 +76,8 @@
     "@id" : "http://purl.org/NET/rdflicense/cc-by-nc-sa4.0"
   } ],
   "http://purl.org/dc/terms/modified" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2022-03-22T00:00:00"
+    "@language" : "en",
+    "@value" : "2022-03-24T00:00:00"
   } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
     "@language" : "en",
@@ -81,7 +91,13 @@
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "en",
-    "@value" : "v0.0.1"
+    "@value" : "v0.1.0"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping-csv#CSVSourceFrame",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid1"
   } ]
 }, {
   "@id" : "http://www.w3.org/2001/XMLSchema#string",
@@ -120,9 +136,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Dialect Description"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/csvw#delimiter",
@@ -240,6 +253,23 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "quote char"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/csvw#separator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An atomic property that MUST have a single string value that is the character used to separate items in the string value of the cell."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/ns/csvw#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "separator"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
