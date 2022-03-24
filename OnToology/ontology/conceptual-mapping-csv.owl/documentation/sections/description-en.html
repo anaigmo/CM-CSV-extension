@@ -3,7 +3,9 @@
 
 Figure 1 shows how this vocabulary extends the Conceptual Mapping to describe CSV features.
 It imports the class `csvw:Dialect` with the data properties and object properties that have
-as domain the mentioned class, such as `csvw:delimiter` or `csvw:header`.
+as domain the mentioned class, such as `csvw:delimiter` or `csvw:header`. The class
+`CSVSourceFrame` is created as a subclass of the intersection of `SourceFrame` and `csvw:Dialect`,
+thus it becomes a frame able to describe CSV data sources.
 
 </span>
 
