@@ -10,14 +10,14 @@
                                                           owl:versionIRI <http://vocab.linkeddata.es/def/conceptual-mapping-csv> ;
                                                           <http://purl.org/dc/elements/1.1/publisher> <http://www.oeg-upm.net/> ;
                                                           <http://purl.org/dc/elements/1.1/title> "Conceptual Mapping - CSV description"@en ;
-                                                          <http://purl.org/dc/terms/created> "2020-10-14T00:00:00"@en ;
+                                                          <http://purl.org/dc/terms/created> "2022-03-22T00:00:00"@en ;
                                                           <http://purl.org/dc/terms/creator> "Ana Iglesias Molina (Ontology Engineering Group)"@es ;
                                                           <http://purl.org/dc/terms/description> "This ontology extends the Conceptual Mapping to describe CSV with properties imported from CSVW."@en ;
                                                           <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by-nc-sa4.0> ;
-                                                          <http://purl.org/dc/terms/modified> "2022-03-22T00:00:00"^^xsd:dateTime ;
+                                                          <http://purl.org/dc/terms/modified> "2022-03-24T00:00:00"@en ;
                                                           <http://purl.org/vocab/vann/preferredNamespacePrefix> "cm-csv"@en ;
                                                           <http://purl.org/vocab/vann/preferredNamespaceUri> <http://vocab.linkeddata.es/def/conceptual-mapping-csv> ;
-                                                          owl:versionInfo "v0.0.1"@en .
+                                                          owl:versionInfo "v0.1.0"@en .
 
 #################################################################
 #    Annotation properties
@@ -126,6 +126,14 @@ owl:versionIRI rdf:type owl:AnnotationProperty .
                                       rdfs:label "quote char"@en .
 
 
+###  http://www.w3.org/ns/csvw#separator
+<http://www.w3.org/ns/csvw#separator> rdf:type owl:ObjectProperty ;
+                                      rdfs:range xsd:string ;
+                                      rdfs:comment "An atomic property that MUST have a single string value that is the character used to separate items in the string value of the cell."@en ;
+                                      rdfs:isDefinedBy <http://www.w3.org/ns/csvw#> ;
+                                      rdfs:label "separator"@en .
+
+
 #################################################################
 #    Data properties
 #################################################################
@@ -212,13 +220,21 @@ owl:versionIRI rdf:type owl:AnnotationProperty .
                                                                        <http://www.w3.org/2004/02/skos/core#definition> "Frame that is related to the data source" .
 
 
+###  http://vocab.linkeddata.es/def/conceptual-mapping-csv#CSVSourceFrame
+:CSVSourceFrame rdf:type owl:Class ;
+                rdfs:subClassOf [ owl:intersectionOf ( <http://http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame>
+                                                       <http://www.w3.org/ns/csvw#Dialect>
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] .
+
+
 ###  http://www.w3.org/2001/XMLSchema#string
 xsd:string rdf:type owl:Class .
 
 
 ###  http://www.w3.org/ns/csvw#Dialect
 <http://www.w3.org/ns/csvw#Dialect> rdf:type owl:Class ;
-                                    rdfs:subClassOf <http://http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame> ;
                                     rdfs:comment "A Dialect Description provides hints to parsers about how to parse a linked file."@en ;
                                     rdfs:isDefinedBy <http://www.w3.org/ns/csvw#> ;
                                     rdfs:label "Dialect Description"@en .

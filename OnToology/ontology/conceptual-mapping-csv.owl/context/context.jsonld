@@ -62,6 +62,9 @@
     "definition" : {
       "@id" : "http://www.w3.org/2008/05/skos#definition"
     },
+    "CSVSourceFrame" : {
+      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping-csv#CSVSourceFrame"
+    },
     "editorialNote" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#editorialNote"
     },
@@ -93,6 +96,10 @@
     },
     "contributor" : {
       "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "separator" : {
+      "@id" : "http://www.w3.org/ns/csvw#separator",
+      "@type" : "@id"
     },
     "headerRowCount" : {
       "@id" : "http://www.w3.org/ns/csvw#headerRowCount",

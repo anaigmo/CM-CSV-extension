@@ -4,6 +4,12 @@ This section provides details for each class and property defined by Conceptual 
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
+         <a href="#CSVSourceFrame"
+            title="http://vocab.linkeddata.es/def/conceptual-mapping-csv#CSVSourceFrame">
+            <span>c s v source frame</span>
+         </a>
+      </li>
+      <li>
          <a href="#http://www.w3.org/ns/csvw#Dialect" title="http://www.w3.org/ns/csvw#Dialect">Dialect Description</a>
       </li>
       <li>
@@ -11,6 +17,18 @@ This section provides details for each class and property defined by Conceptual 
             title="http://http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame">Source Frame</a>
       </li>
    </ul>
+   <div class="entity" id="CSVSourceFrame">
+      <h3>c s v source frame<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/def/conceptual-mapping-csv#CSVSourceFrame</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+      </dl>
+   </div>
    <div class="entity" id="http://www.w3.org/ns/csvw#Dialect">
       <h3>Dialect Description<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -28,12 +46,6 @@ This section provides details for each class and property defined by Conceptual 
          </dd>
       </dl>
       <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#http://http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame"
-               title="http://http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame">Source Frame</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
          <dt>is in domain of</dt>
          <dd>
             <a href="#http://www.w3.org/ns/csvw#delimiter" title="http://www.w3.org/ns/csvw#delimiter">delimiter</a>
@@ -61,13 +73,6 @@ This section provides details for each class and property defined by Conceptual 
       <div class="comment">
          <span class="markdown">Frame that is related to the data source</span>
       </div>
-      <dl class="description">
-         <dt>has sub-classes</dt>
-         <dd>
-            <a href="#http://www.w3.org/ns/csvw#Dialect" title="http://www.w3.org/ns/csvw#Dialect">Dialect Description</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
    </div>
 </div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
    <h3 id="properties" class="list">Object Properties</h3>
@@ -80,6 +85,9 @@ This section provides details for each class and property defined by Conceptual 
       </li>
       <li>
          <a href="#http://www.w3.org/ns/csvw#quoteChar" title="http://www.w3.org/ns/csvw#quoteChar">quote char</a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/ns/csvw#separator" title="http://www.w3.org/ns/csvw#separator">separator</a>
       </li>
    </ul>
    <div class="entity" id="http://www.w3.org/ns/csvw#delimiter">
@@ -171,6 +179,34 @@ This section provides details for each class and property defined by Conceptual 
                <a href="#http://www.w3.org/ns/csvw#Dialect" title="http://www.w3.org/ns/csvw#Dialect">Dialect Description</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://www.w3.org/ns/csvw#separator">
+      <h3>separator<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/csvw#separator</p>
+      <div class="comment">
+         <span class="markdown">An atomic property that MUST have a single string value that is the character used to separate items in the string value of the cell.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/csvw#">http://www.w3.org/ns/csvw#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
             <dt>has range</dt>
             <dd>
                <a href="http://www.w3.org/2001/XMLSchema#string"

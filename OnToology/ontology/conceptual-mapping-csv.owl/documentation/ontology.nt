@@ -2,14 +2,14 @@
 <http://vocab.linkeddata.es/def/conceptual-mapping-csv#> <http://www.w3.org/2002/07/owl#versionIRI> <http://vocab.linkeddata.es/def/conceptual-mapping-csv> .
 <http://vocab.linkeddata.es/def/conceptual-mapping-csv#> <http://purl.org/dc/elements/1.1/publisher> <http://www.oeg-upm.net/> .
 <http://vocab.linkeddata.es/def/conceptual-mapping-csv#> <http://purl.org/dc/elements/1.1/title> "Conceptual Mapping - CSV description"@en .
-<http://vocab.linkeddata.es/def/conceptual-mapping-csv#> <http://purl.org/dc/terms/created> "2020-10-14T00:00:00"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping-csv#> <http://purl.org/dc/terms/created> "2022-03-22T00:00:00"@en .
 <http://vocab.linkeddata.es/def/conceptual-mapping-csv#> <http://purl.org/dc/terms/creator> "Ana Iglesias Molina (Ontology Engineering Group)"@es .
 <http://vocab.linkeddata.es/def/conceptual-mapping-csv#> <http://purl.org/dc/terms/description> "This ontology extends the Conceptual Mapping to describe CSV with properties imported from CSVW."@en .
 <http://vocab.linkeddata.es/def/conceptual-mapping-csv#> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by-nc-sa4.0> .
-<http://vocab.linkeddata.es/def/conceptual-mapping-csv#> <http://purl.org/dc/terms/modified> "2022-03-22T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/def/conceptual-mapping-csv#> <http://purl.org/dc/terms/modified> "2022-03-24T00:00:00"@en .
 <http://vocab.linkeddata.es/def/conceptual-mapping-csv#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "cm-csv"@en .
 <http://vocab.linkeddata.es/def/conceptual-mapping-csv#> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://vocab.linkeddata.es/def/conceptual-mapping-csv> .
-<http://vocab.linkeddata.es/def/conceptual-mapping-csv#> <http://www.w3.org/2002/07/owl#versionInfo> "v0.0.1"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping-csv#> <http://www.w3.org/2002/07/owl#versionInfo> "v0.1.0"@en .
 # 
 # 
 # #################################################################
@@ -106,6 +106,13 @@
 <http://www.w3.org/ns/csvw#quoteChar> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/csvw#> .
 <http://www.w3.org/ns/csvw#quoteChar> <http://www.w3.org/2000/01/rdf-schema#label> "quote char"@en .
 # 
+# http://www.w3.org/ns/csvw#separator
+<http://www.w3.org/ns/csvw#separator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/csvw#separator> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3.org/ns/csvw#separator> <http://www.w3.org/2000/01/rdf-schema#comment> "An atomic property that MUST have a single string value that is the character used to separate items in the string value of the cell."@en .
+<http://www.w3.org/ns/csvw#separator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/csvw#> .
+<http://www.w3.org/ns/csvw#separator> <http://www.w3.org/2000/01/rdf-schema#label> "separator"@en .
+# 
 # 
 # 
 # #################################################################
@@ -193,12 +200,23 @@
 <http://http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame> <http://www.w3.org/2000/01/rdf-schema#label> "Source Frame" .
 <http://http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame> <http://www.w3.org/2004/02/skos/core#definition> "Frame that is related to the data source" .
 # 
+# http://vocab.linkeddata.es/def/conceptual-mapping-csv#CSVSourceFrame
+<http://vocab.linkeddata.es/def/conceptual-mapping-csv#CSVSourceFrame> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/def/conceptual-mapping-csv#CSVSourceFrame> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/csvw#Dialect> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
 # http://www.w3.org/2001/XMLSchema#string
 <http://www.w3.org/2001/XMLSchema#string> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://www.w3.org/ns/csvw#Dialect
 <http://www.w3.org/ns/csvw#Dialect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/ns/csvw#Dialect> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame> .
 <http://www.w3.org/ns/csvw#Dialect> <http://www.w3.org/2000/01/rdf-schema#comment> "A Dialect Description provides hints to parsers about how to parse a linked file."@en .
 <http://www.w3.org/ns/csvw#Dialect> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/csvw#> .
 <http://www.w3.org/ns/csvw#Dialect> <http://www.w3.org/2000/01/rdf-schema#label> "Dialect Description"@en .
