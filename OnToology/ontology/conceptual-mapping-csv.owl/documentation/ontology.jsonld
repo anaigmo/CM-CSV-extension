@@ -1,14 +1,4 @@
 [ {
-  "@id" : "_:genid1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame"
-    }, {
-      "@id" : "http://www.w3.org/ns/csvw#Dialect"
-    } ]
-  } ]
-}, {
   "@id" : "http://http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -96,8 +86,16 @@
 }, {
   "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping-csv#CSVSourceFrame",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "CSV Source Frame"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid1"
+    "@id" : "http://http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame"
+  }, {
+    "@id" : "http://www.w3.org/ns/csvw#Dialect"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Frame that is related to a CSV data source"
   } ]
 }, {
   "@id" : "http://www.w3.org/2001/XMLSchema#string",

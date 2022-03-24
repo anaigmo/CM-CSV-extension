@@ -222,11 +222,10 @@ owl:versionIRI rdf:type owl:AnnotationProperty .
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping-csv#CSVSourceFrame
 :CSVSourceFrame rdf:type owl:Class ;
-                rdfs:subClassOf [ owl:intersectionOf ( <http://http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame>
-                                                       <http://www.w3.org/ns/csvw#Dialect>
-                                                     ) ;
-                                  rdf:type owl:Class
-                                ] .
+                rdfs:subClassOf <http://http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame> ,
+                                <http://www.w3.org/ns/csvw#Dialect> ;
+                rdfs:label "CSV Source Frame" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Frame that is related to a CSV data source" .
 
 
 ###  http://www.w3.org/2001/XMLSchema#string
