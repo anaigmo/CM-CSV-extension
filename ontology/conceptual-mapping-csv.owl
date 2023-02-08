@@ -21,7 +21,7 @@
         <dcterms:created xml:lang="en">2022-03-22T00:00:00</dcterms:created>
         <dcterms:creator xml:lang="es">Ana Iglesias Molina (Ontology Engineering Group)</dcterms:creator>
         <dcterms:description xml:lang="en">This ontology extends the Conceptual Mapping to describe CSV with properties imported from CSVW.</dcterms:description>
-        <dcterms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by-nc-sa4.0"/>
+        <dcterms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by-sa4.0"/>
         <dcterms:modified xml:lang="en">2022-03-24T00:00:00</dcterms:modified>
         <vann:preferredNamespacePrefix xml:lang="en">cm-csv</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping-csv"/>
