@@ -1,0 +1,35 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "http://www.w3.org/ns/csvw#Dialect" "cm-csv@en:CSVSourceFrame" "cm:SourceFrame" "cm@en:PeriodicSource" "cm@en:DataAccessService" "cm@en:DataField" "rdf:List" "cm@en:BlankNodeMap" "http://www.w3.org/ns/dcat#Distribution" "cm@en:AltMap" "http://www.w3.org/ns/dcat#DataService" "cm@en:FunctionExpression" "cm@en:UnionCombination" "cm@en:BagMap" "cm@en:SourceFrame" "cm@en:ExpressionList" "cm@en:StreamSource" "cm@en:EventSource" "cm@en:ResourceMap" "cm@en:EvaluableExpression" "cm@en:ConditionalStatementMap" "rdfs:Resource" "cm@en:DataSource" "cm@en:Frame" "cm@en:LiteralMap" "cm@en:NodeMap" "cm@en:SeqMap" "cm@en:Constant" "cm@en:CombinedFrame" "cm@en:ReferenceNodeMap" "cm@en:CartessianProductCombination" "cm@en:ListMap" "cm@en:JoinCombination" "cm@en:AsynchronousSource" "cm@en:SynchronousSource" "cm@en:StatementMap" "cm@en:ContainerMap" ; /*classes style*/
+	"cm@en:ExpressionList" -> "rdf:List" [ label = "rdfs:subClassOf" ];
+	"cm@en:StreamSource" -> "cm@en:DataSource" [ label = "rdfs:subClassOf" ];
+	"cm@en:UnionCombination" -> "cm@en:CombinedFrame" [ label = "rdfs:subClassOf" ];
+	"rdf:List" -> "rdfs:Resource" [ label = "rdfs:subClassOf" ];
+	"cm@en:CartessianProductCombination" -> "cm@en:CombinedFrame" [ label = "rdfs:subClassOf" ];
+	"cm@en:SourceFrame" -> "cm@en:Frame" [ label = "rdfs:subClassOf" ];
+	"cm@en:AsynchronousSource" -> "cm@en:DataSource" [ label = "rdfs:subClassOf" ];
+	"cm@en:EventSource" -> "cm@en:AsynchronousSource" [ label = "rdfs:subClassOf" ];
+	"cm@en:LiteralMap" -> "cm@en:ResourceMap" [ label = "rdfs:subClassOf" ];
+	"cm@en:BlankNodeMap" -> "cm@en:NodeMap" [ label = "rdfs:subClassOf" ];
+	"cm@en:BagMap" -> "cm@en:ContainerMap" [ label = "rdfs:subClassOf" ];
+	"cm@en:NodeMap" -> "cm@en:ResourceMap" [ label = "rdfs:subClassOf" ];
+	"cm@en:SynchronousSource" -> "cm@en:DataSource" [ label = "rdfs:subClassOf" ];
+	"cm@en:DataField" -> "cm@en:EvaluableExpression" [ label = "rdfs:subClassOf" ];
+	"cm@en:ListMap" -> "cm@en:ResourceMap" [ label = "rdfs:subClassOf" ];
+	"cm@en:ConditionalStatementMap" -> "cm@en:StatementMap" [ label = "rdfs:subClassOf" ];
+	"cm@en:SeqMap" -> "cm@en:ContainerMap" [ label = "rdfs:subClassOf" ];
+	"cm@en:DataSource" -> "http://www.w3.org/ns/dcat#Distribution" [ label = "rdfs:subClassOf" ];
+	"cm@en:ContainerMap" -> "cm@en:ResourceMap" [ label = "rdfs:subClassOf" ];
+	"cm@en:FunctionExpression" -> "cm@en:EvaluableExpression" [ label = "rdfs:subClassOf" ];
+	"cm@en:CombinedFrame" -> "cm@en:Frame" [ label = "rdfs:subClassOf" ];
+	"cm@en:DataAccessService" -> "http://www.w3.org/ns/dcat#DataService" [ label = "rdfs:subClassOf" ];
+	"cm@en:PeriodicSource" -> "cm@en:AsynchronousSource" [ label = "rdfs:subClassOf" ];
+	"cm-csv@en:CSVSourceFrame" -> "http://www.w3.org/ns/csvw#Dialect" [ label = "rdfs:subClassOf" ];
+	"cm-csv@en:CSVSourceFrame" -> "cm:SourceFrame" [ label = "rdfs:subClassOf" ];
+	"cm@en:ReferenceNodeMap" -> "cm@en:NodeMap" [ label = "rdfs:subClassOf" ];
+	"cm@en:AltMap" -> "cm@en:ContainerMap" [ label = "rdfs:subClassOf" ];
+	"cm@en:JoinCombination" -> "cm@en:CombinedFrame" [ label = "rdfs:subClassOf" ];
+	"cm@en:Constant" -> "cm@en:EvaluableExpression" [ label = "rdfs:subClassOf" ];
+
+}
