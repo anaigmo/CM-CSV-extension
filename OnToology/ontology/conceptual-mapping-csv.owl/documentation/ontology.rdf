@@ -13,12 +13,13 @@
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping-csv#">
         <owl:versionIRI rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping-csv"/>
+        <owl:imports rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping"/>
         <dc:publisher rdf:resource="https://oeg.fi.upm.es/"/>
         <dc:title xml:lang="en">Conceptual Mapping - CSV description</dc:title>
         <terms:created xml:lang="en">2022-03-22T00:00:00</terms:created>
         <terms:creator xml:lang="es">Ana Iglesias Molina (Ontology Engineering Group)</terms:creator>
         <terms:description xml:lang="en">This ontology extends the Conceptual Mapping to describe CSV with properties imported from CSVW.</terms:description>
-        <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by-nc-sa4.0"/>
+        <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by-sa4.0"/>
         <terms:modified xml:lang="en">2022-03-24T00:00:00</terms:modified>
         <vann:preferredNamespacePrefix xml:lang="en">cm-csv</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping-csv"/>

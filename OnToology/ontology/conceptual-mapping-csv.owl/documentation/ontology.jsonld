@@ -63,7 +63,7 @@
     "@value" : "This ontology extends the Conceptual Mapping to describe CSV with properties imported from CSVW."
   } ],
   "http://purl.org/dc/terms/license" : [ {
-    "@id" : "http://purl.org/NET/rdflicense/cc-by-nc-sa4.0"
+    "@id" : "http://purl.org/NET/rdflicense/cc-by-sa4.0"
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@language" : "en",
@@ -75,6 +75,9 @@
   } ],
   "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
     "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping-csv"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
     "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping-csv"

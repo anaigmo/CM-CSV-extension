@@ -1,11 +1,12 @@
 <http://vocab.linkeddata.es/def/conceptual-mapping-csv#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://vocab.linkeddata.es/def/conceptual-mapping-csv#> <http://www.w3.org/2002/07/owl#versionIRI> <http://vocab.linkeddata.es/def/conceptual-mapping-csv> .
+<http://vocab.linkeddata.es/def/conceptual-mapping-csv#> <http://www.w3.org/2002/07/owl#imports> <http://vocab.linkeddata.es/def/conceptual-mapping> .
 <http://vocab.linkeddata.es/def/conceptual-mapping-csv#> <http://purl.org/dc/elements/1.1/publisher> <https://oeg.fi.upm.es/> .
 <http://vocab.linkeddata.es/def/conceptual-mapping-csv#> <http://purl.org/dc/elements/1.1/title> "Conceptual Mapping - CSV description"@en .
 <http://vocab.linkeddata.es/def/conceptual-mapping-csv#> <http://purl.org/dc/terms/created> "2022-03-22T00:00:00"@en .
 <http://vocab.linkeddata.es/def/conceptual-mapping-csv#> <http://purl.org/dc/terms/creator> "Ana Iglesias Molina (Ontology Engineering Group)"@es .
 <http://vocab.linkeddata.es/def/conceptual-mapping-csv#> <http://purl.org/dc/terms/description> "This ontology extends the Conceptual Mapping to describe CSV with properties imported from CSVW."@en .
-<http://vocab.linkeddata.es/def/conceptual-mapping-csv#> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by-nc-sa4.0> .
+<http://vocab.linkeddata.es/def/conceptual-mapping-csv#> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by-sa4.0> .
 <http://vocab.linkeddata.es/def/conceptual-mapping-csv#> <http://purl.org/dc/terms/modified> "2022-03-24T00:00:00"@en .
 <http://vocab.linkeddata.es/def/conceptual-mapping-csv#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "cm-csv"@en .
 <http://vocab.linkeddata.es/def/conceptual-mapping-csv#> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://vocab.linkeddata.es/def/conceptual-mapping-csv> .
