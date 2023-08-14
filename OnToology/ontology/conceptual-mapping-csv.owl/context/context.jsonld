@@ -63,7 +63,7 @@
       "@id" : "http://www.w3.org/2008/05/skos#definition"
     },
     "CSVSourceFrame" : {
-      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping-csv#CSVSourceFrame"
+      "@id" : "https://w3id.org/conceptual-mapping/csv#CSVSourceFrame"
     },
     "editorialNote" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#editorialNote"
@@ -85,7 +85,7 @@
       "@id" : "http://purl.org/dc/terms/modified"
     },
     "SourceFrame" : {
-      "@id" : "http://http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame"
+      "@id" : "http://https://w3id.org/conceptual-mapping#SourceFrame"
     },
     "skipInitialSpace" : {
       "@id" : "http://www.w3.org/ns/csvw#skipInitialSpace",
