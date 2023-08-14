@@ -325,9 +325,9 @@
 
 
 
-    <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame -->
+    <!-- http://https://w3id.org/conceptual-mapping#SourceFrame -->
 
-    <owl:Class rdf:about="http://http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame">
+    <owl:Class rdf:about="http://https://w3id.org/conceptual-mapping#SourceFrame">
         <rdfs:label>Source Frame</rdfs:label>
         <skos:definition>Frame that is related to the data source</skos:definition>
     </owl:Class>
@@ -337,7 +337,7 @@
     <!-- https://w3id.org/conceptual-mapping/csv#CSVSourceFrame -->
 
     <owl:Class rdf:about="https://w3id.org/conceptual-mapping/csv#CSVSourceFrame">
-        <rdfs:subClassOf rdf:resource="http://http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame"/>
+        <rdfs:subClassOf rdf:resource="http://https://w3id.org/conceptual-mapping#SourceFrame"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/csvw#Dialect"/>
         <rdfs:label>CSV Source Frame</rdfs:label>
         <skos:definition>Frame that is related to a CSV data source</skos:definition>
