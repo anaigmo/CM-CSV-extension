@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://http://vocab.linkeddata.es/def/conceptual-mapping#"
-     xml:base="http://http://vocab.linkeddata.es/def/conceptual-mapping"
-     xmlns:cm="http://http://vocab.linkeddata.es/def/conceptual-mapping#"
+<rdf:RDF xmlns="https://w3id.org/conceptual-mapping/csv#"
+     xml:base="https://w3id.org/conceptual-mapping/csv"
+     xmlns:cm="https://w3id.org/conceptual-mapping#"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -13,8 +13,8 @@
      xmlns:skos1="http://www.w3.org/2008/05/skos#"
      xmlns:wotsec="https://www.w3.org/2019/wot/security#"
      xmlns:dcterms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping-csv#">
-        <owl:versionIRI rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping-csv"/>
+    <owl:Ontology rdf:about="https://w3id.org/conceptual-mapping/csv#">
+        <owl:versionIRI rdf:resource="https://w3id.org/conceptual-mapping/csv"/>
         <owl:imports rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping"/>
         <dc:publisher rdf:resource="https://oeg.fi.upm.es/"/>
         <dc:title xml:lang="en">Conceptual Mapping - CSV description</dc:title>
@@ -24,13 +24,13 @@
         <dcterms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by-sa4.0"/>
         <dcterms:modified xml:lang="en">2022-03-24T00:00:00</dcterms:modified>
         <vann:preferredNamespacePrefix xml:lang="en">cm-csv</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping-csv"/>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/conceptual-mapping/csv"/>
         <owl:versionInfo xml:lang="en">v0.1.0</owl:versionInfo>
     </owl:Ontology>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotation properties
@@ -38,118 +38,118 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://purl.org/dc/elements/1.1/publisher -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
-    
+
 
 
     <!-- http://purl.org/dc/elements/1.1/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/contributor -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/created -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/issued -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/modified -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
-    
+
 
 
     <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
-    
+
 
 
     <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
-    
+
 
 
     <!-- http://www.w3.org/2002/07/owl#versionIRI -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionIRI"/>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#changeNote -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#changeNote"/>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#definition -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#editorialNote -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#editorialNote"/>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#scopeNote -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote"/>
-    
+
 
 
     <!-- http://www.w3.org/2008/05/skos#definition -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2008/05/skos#definition"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -157,7 +157,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://www.w3.org/ns/csvw#delimiter -->
@@ -169,7 +169,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/csvw#"/>
         <rdfs:label xml:lang="en">delimiter</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/csvw#lineTerminators -->
@@ -181,7 +181,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/csvw#"/>
         <rdfs:label xml:lang="en">line terminators</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/csvw#quoteChar -->
@@ -193,7 +193,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/csvw#"/>
         <rdfs:label xml:lang="en">quote char</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/csvw#separator -->
@@ -204,10 +204,10 @@
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/csvw#"/>
         <rdfs:label xml:lang="en">separator</rdfs:label>
     </owl:ObjectProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Data properties
@@ -215,7 +215,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://www.w3.org/ns/csvw#doubleQuote -->
@@ -227,7 +227,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/csvw#"/>
         <rdfs:label xml:lang="en">double quote</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/csvw#header -->
@@ -239,7 +239,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/csvw#"/>
         <rdfs:label xml:lang="en">header</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/csvw#headerRowCount -->
@@ -251,7 +251,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/csvw#"/>
         <rdfs:label xml:lang="en">header row count</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/csvw#skipBlankRows -->
@@ -263,7 +263,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/csvw#"/>
         <rdfs:label xml:lang="en">skip blank rows</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/csvw#skipColumns -->
@@ -275,7 +275,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/csvw#"/>
         <rdfs:label xml:lang="en">skip columns</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/csvw#skipInitialSpace -->
@@ -287,7 +287,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/csvw#"/>
         <rdfs:label xml:lang="en">skip initial space</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/csvw#skipRows -->
@@ -299,7 +299,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/csvw#"/>
         <rdfs:label xml:lang="en">skip rows</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/csvw#trim -->
@@ -311,10 +311,10 @@
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/csvw#"/>
         <rdfs:label xml:lang="en">trim</rdfs:label>
     </owl:DatatypeProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -322,7 +322,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame -->
@@ -331,24 +331,24 @@
         <rdfs:label>Source Frame</rdfs:label>
         <skos:definition>Frame that is related to the data source</skos:definition>
     </owl:Class>
-    
 
 
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping-csv#CSVSourceFrame -->
 
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping-csv#CSVSourceFrame">
+    <!-- https://w3id.org/conceptual-mapping/csv#CSVSourceFrame -->
+
+    <owl:Class rdf:about="https://w3id.org/conceptual-mapping/csv#CSVSourceFrame">
         <rdfs:subClassOf rdf:resource="http://http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/csvw#Dialect"/>
         <rdfs:label>CSV Source Frame</rdfs:label>
         <skos:definition>Frame that is related to a CSV data source</skos:definition>
     </owl:Class>
-    
+
 
 
     <!-- http://www.w3.org/2001/XMLSchema#string -->
 
     <owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/csvw#Dialect -->
@@ -363,4 +363,3 @@
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
-
