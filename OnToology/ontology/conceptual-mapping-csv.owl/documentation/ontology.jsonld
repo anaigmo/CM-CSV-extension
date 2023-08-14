@@ -1,5 +1,5 @@
 [ {
-  "@id" : "http://http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame",
+  "@id" : "http://https://w3id.org/conceptual-mapping#SourceFrame",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Source Frame"
@@ -40,63 +40,6 @@
 }, {
   "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping-csv#",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
-  "http://purl.org/dc/elements/1.1/publisher" : [ {
-    "@id" : "https://oeg.fi.upm.es/"
-  } ],
-  "http://purl.org/dc/elements/1.1/title" : [ {
-    "@language" : "en",
-    "@value" : "Conceptual Mapping - CSV description"
-  } ],
-  "http://purl.org/dc/terms/created" : [ {
-    "@language" : "en",
-    "@value" : "2022-03-22T00:00:00"
-  } ],
-  "http://purl.org/dc/terms/creator" : [ {
-    "@language" : "es",
-    "@value" : "Ana Iglesias Molina (Ontology Engineering Group)"
-  } ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "This ontology extends the Conceptual Mapping to describe CSV with properties imported from CSVW."
-  } ],
-  "http://purl.org/dc/terms/license" : [ {
-    "@id" : "http://purl.org/NET/rdflicense/cc-by-nc-sa4.0"
-  } ],
-  "http://purl.org/dc/terms/modified" : [ {
-    "@language" : "en",
-    "@value" : "2022-03-24T00:00:00"
-  } ],
-  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
-    "@language" : "en",
-    "@value" : "cm-csv"
-  } ],
-  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
-    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping-csv"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping-csv"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "en",
-    "@value" : "v0.1.0"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping-csv#CSVSourceFrame",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "CSV Source Frame"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame"
-  }, {
-    "@id" : "http://www.w3.org/ns/csvw#Dialect"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : "Frame that is related to a CSV data source"
-  } ]
 }, {
   "@id" : "http://www.w3.org/2001/XMLSchema#string",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
@@ -371,5 +314,65 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/conceptual-mapping/csv#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/publisher" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@language" : "en",
+    "@value" : "Conceptual Mapping - CSV description"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@language" : "en",
+    "@value" : "2022-03-22T00:00:00"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@language" : "es",
+    "@value" : "Ana Iglesias Molina (Ontology Engineering Group)"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "This ontology extends the Conceptual Mapping to describe CSV with properties imported from CSVW."
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "http://purl.org/NET/rdflicense/cc-by-sa4.0"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@language" : "en",
+    "@value" : "2022-03-24T00:00:00"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@language" : "en",
+    "@value" : "cm-csv"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@id" : "https://w3id.org/conceptual-mapping/csv"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://w3id.org/conceptual-mapping"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://w3id.org/conceptual-mapping/csv"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "en",
+    "@value" : "v0.1.0"
+  } ]
+}, {
+  "@id" : "https://w3id.org/conceptual-mapping/csv#CSVSourceFrame",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "CSV Source Frame"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://https://w3id.org/conceptual-mapping#SourceFrame"
+  }, {
+    "@id" : "http://www.w3.org/ns/csvw#Dialect"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Frame that is related to a CSV data source"
   } ]
 } ]
